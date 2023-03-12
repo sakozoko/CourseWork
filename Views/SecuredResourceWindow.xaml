@@ -1,0 +1,33 @@
+<Window x:Class="CourseWork.Views.SecuredResourceWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="SecuredResourceWindow" Height="450" Width="400">
+    <Grid>
+    <Grid.RowDefinitions>
+        <RowDefinition Height="5px" />
+        <RowDefinition Height="*" />
+        <RowDefinition Height="5px" />
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="5px" />
+        <ColumnDefinition Width="*" />
+        <ColumnDefinition Width="5px" />
+    </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="1" Grid.Row="1">
+            <TextBlock FontSize="18" Text="Secured Resource" />
+            <TextBlock Visibility="Collapsed" x:Name="TextBlock" FontSize="12" TextWrapping="Wrap" Text="In cryptography, the ElGamal encryption system is an asymmetric key encryption algorithm for public-key cryptography which is based on the Diffie–Hellman key exchange. It was described by Taher Elgamal in 1985.[1] ElGamal encryption is used in the free GNU Privacy Guard software, recent versions of PGP, and other cryptosystems. The Digital Signature Algorithm (DSA) is a variant of the ElGamal signature scheme, which should not be confused with ElGamal encryption.
+ElGamal encryption can be defined over any cyclic group
+G, like multiplicative group of integers modulo n. Its security depends upon the difficulty of a certain problem in 
+G related to computing discrete logarithms." />
+            <TextBlock x:Name="SecuredResource" />
+            <WrapPanel HorizontalAlignment="Center">
+                <Button Margin="10" Width="100" Height="25" Content="Logout" Click="Logout_Click" />
+                <Button Margin="10" Width="100" Height="25" Content="Back" Click="Back_Click" />
+                </WrapPanel>
+        </StackPanel>
+
+    </Grid>
+</Window>
